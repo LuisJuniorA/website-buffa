@@ -1,0 +1,19 @@
+{
+    "name": "neural-dash-backend",
+    "version": "1.0.0",
+    "description": "Backend API for Neural Dash",
+    "main": "src/server.js",
+    "type": "module",
+    "scripts": {
+        "start": "node src/server.js",
+        "dev": "node --watch src/server.js"
+    },
+    "dependencies": {
+        "@supabase/supabase-js": "^2.103.3",
+        "bcryptjs": "^3.0.3",
+        "body-parser": "^1.20.2",
+        "cors": "^2.8.5",
+        "dotenv": "^17.4.2",
+        "express": "^4.18.2"
+    }
+}

@@ -1,0 +1,26 @@
+/* === Custom properties === */
+:root {
+    --color-purple: #a855f7;
+    --color-pink: #ec4899;
+    --color-cyan: #06b6d4;
+    --color-blue: #3b82f6;
+    --color-surface: #0f0f13;
+    --color-card: #1a1a24;
+    --font-sans: "Inter", system-ui, sans-serif;
+}
+
+/* =============================================
+   Utility
+   ============================================= */
+.accent-purple {
+    --accent: var(--color-purple);
+    --accent-end: rgba(168, 85, 247, 0.05);
+}
+.accent-pink {
+    --accent: var(--color-pink);
+    --accent-end: rgba(236, 72, 153, 0.05);
+}
+.accent-cyan {
+    --accent: var(--color-cyan);
+    --accent-end: rgba(6, 182, 212, 0.05);
+}

@@ -1,0 +1,217 @@
+/* =============================================
+   Navbar
+   ============================================= */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.875rem 2rem;
+    background: rgba(10, 10, 15, 0.8);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.navbar__brand {
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    font-size: 1.125rem;
+}
+
+.navbar__logo {
+    color: var(--color-purple);
+}
+
+.navbar__actions {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.navbar__link {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.navbar__link:hover {
+    color: white;
+}
+
+.navbar__auth {
+    display: flex;
+    align-items: center;
+}
+
+/* =============================================
+   Hero
+   ============================================= */
+.hero {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 8rem 2rem 4rem;
+    text-align: center;
+}
+
+.hero__content {
+    max-width: 640px;
+}
+
+.hero__tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.375rem 0.75rem;
+    background: rgba(168, 85, 247, 0.1);
+    border: 1px solid rgba(168, 85, 247, 0.2);
+    border-radius: 999px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: var(--color-purple);
+    margin-bottom: 1.5rem;
+}
+
+.hero__tag::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--color-purple);
+    animation: pulse-slow 2s ease-in-out infinite;
+}
+
+.hero__title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+}
+.hero__desc {
+    font-size: 1.125rem;
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+/* =============================================
+   Section & Grid Layouts
+   ============================================= */
+.section {
+    position: relative;
+    z-index: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0rem 2rem 4rem 2rem;
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 2.5rem;
+}
+
+.section-header__icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.75rem;
+    background: rgba(168, 85, 247, 0.1);
+    border: 1px solid rgba(168, 85, 247, 0.2);
+}
+
+.section-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 1.5rem;
+}
+
+/* =============================================
+   Footer
+   ============================================= */
+.footer {
+    position: relative;
+    z-index: 1;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.footer__inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer p {
+    font-size: 0.8125rem;
+    color: rgba(255, 255, 255, 0.25);
+}
+
+.footer__links {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.footer__link {
+    color: rgba(95, 95, 110, 1);
+    text-decoration: none;
+    font-size: 0.8125rem;
+    transition: color 0.2s ease;
+}
+
+.footer__link:hover {
+    color: rgba(212, 212, 220, 1);
+}
+.footer__sep {
+    color: rgba(255, 255, 255, 0.1);
+}
+
+/* =============================================
+   Responsive Global
+   ============================================= */
+@media (max-width: 900px) {
+    .dashboard-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 640px) {
+    .hero__title {
+        font-size: 2.5rem;
+    }
+    .navbar {
+        padding: 0.75rem 1rem;
+    }
+    .navbar__actions {
+        gap: 1rem;
+    }
+    .footer__inner {
+        flex-direction: column;
+        gap: 0.75rem;
+        text-align: center;
+    }
+}

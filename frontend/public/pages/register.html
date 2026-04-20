@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Inscription — Hub</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+        <link rel="stylesheet" href="../css/main.css" />
+    </head>
+    <body>
+        <div class="bg-grid"></div>
+        <div class="orb orb--purple"></div>
+        <div class="orb orb--pink"></div>
+        <div class="orb orb--cyan"></div>
+
+        <nav class="navbar">
+            <a class="navbar__brand" href="../../index.html">
+                <svg
+                    class="navbar__logo"
+                    width="28"
+                    height="28"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                >
+                    <rect x="2" y="6" width="20" height="12" rx="3" />
+                    <path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2" />
+                    <path d="M8 18v-2a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2" />
+                </svg>
+                <span class="navbar__title">Hub</span>
+            </a>
+            <div class="navbar__actions">
+                <a class="navbar__link" href="../../index.html">Accueil</a>
+                <a class="navbar__link" href="login.html">Connexion</a>
+            </div>
+        </nav>
+
+        <main class="auth-page">
+            <div class="auth-card">
+                <div class="auth-card__header">
+                    <h1 class="auth-card__title">Inscription</h1>
+                    <p class="auth-card__subtitle">
+                        Créez un compte pour accéder à votre dashboard.
+                    </p>
+                </div>
+
+                <form id="register-form" class="auth-form">
+                    <input
+                        id="register-username"
+                        type="text"
+                        placeholder="Nom d'utilisateur"
+                        required
+                        minlength="3"
+                        autocomplete="username"
+                    />
+                    <input
+                        id="register-email"
+                        type="text"
+                        placeholder="Email"
+                        required
+                        autocomplete="email"
+                    />
+                    <input
+                        id="register-password"
+                        type="password"
+                        placeholder="Mot de passe"
+                        required
+                        minlength="6"
+                        autocomplete="new-password"
+                    />
+                    <input
+                        id="register-password-confirm"
+                        type="password"
+                        placeholder="Confirmer le mot de passe"
+                        required
+                        minlength="6"
+                        autocomplete="new-password"
+                    />
+                    <button type="submit" class="btn-auth btn-auth--primary">
+                        S'inscrire
+                    </button>
+                </form>
+
+                <p id="register-msg" class="auth-msg" style="display: none"></p>
+            </div>
+        </main>
+
+        <script type="module" src="../js/register-page.js"></script>
+    </body>
+</html>

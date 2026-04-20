@@ -1,0 +1,142 @@
+/* === Reset === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: var(--font-sans);
+    color: white;
+}
+
+body {
+    background: #0a0a0f;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* === Background grid === */
+.bg-grid {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    background-image:
+        linear-gradient(rgba(168, 85, 247, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(168, 85, 247, 0.03) 1px, transparent 1px);
+    background-size: 60px 60px;
+    animation: grid-move 20s linear infinite;
+}
+
+@keyframes grid-move {
+    to {
+        background-position: 60px 60px;
+    }
+}
+
+/* === Ambient orbs === */
+.orb {
+    position: fixed;
+    z-index: 0;
+    border-radius: 50%;
+    filter: blur(100px);
+    opacity: 0.35;
+    pointer-events: none;
+}
+
+.orb--purple {
+    width: 500px;
+    height: 500px;
+    background: var(--color-purple);
+    top: -10%;
+    left: -5%;
+    animation: orb-float 18s ease-in-out infinite alternate;
+}
+
+.orb--pink {
+    width: 400px;
+    height: 400px;
+    background: var(--color-pink);
+    bottom: -10%;
+    right: -5%;
+    animation: orb-float-2 22s ease-in-out infinite alternate;
+}
+
+.orb--cyan {
+    width: 350px;
+    height: 350px;
+    background: var(--color-cyan);
+    top: 40%;
+    left: 50%;
+    animation: orb-float-3 25s ease-in-out infinite alternate;
+}
+
+@keyframes orb-float {
+    to {
+        transform: translate(80px, 60px) scale(1.2);
+    }
+}
+@keyframes orb-float-2 {
+    to {
+        transform: translate(-60px, -80px) scale(1.1);
+    }
+}
+@keyframes orb-float-3 {
+    to {
+        transform: translate(-40px, 50px) scale(0.9);
+    }
+}
+
+/* === Hero gradient text === */
+.text-gradient {
+    background: linear-gradient(
+        135deg,
+        var(--color-purple),
+        var(--color-pink),
+        var(--color-cyan)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* =============================================
+   Animations globales
+   ============================================= */
+@keyframes fade-up {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-up {
+    animation: fade-up 0.8s cubic-bezier(0.2, 0.9, 0.3, 1) both;
+}
+
+.animate-fade-up--delay-1 {
+    animation-delay: 0.15s;
+}
+.animate-fade-up--delay-2 {
+    animation-delay: 0.3s;
+}
+.animate-fade-up--delay-3 {
+    animation-delay: 0.45s;
+}
+.animate-fade-up--delay-4 {
+    animation-delay: 0.6s;
+}
+
+@keyframes pulse-slow {
+    0%,
+    100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.4;
+    }
+}
