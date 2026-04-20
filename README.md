@@ -6,7 +6,7 @@
 
 > **Liens indispensables**
 >
-> - **LIEN DU SITE HÉBERGÉ (Les 3 jeux) :** [Lien du site](https://website-buffa.vercel.app/frontend/index.html)
+> - **LIEN DU SITE HÉBERGÉ (Les 3 jeux) :** [Lien du site](https://luisjuniora.github.io/website-buffa/frontend/index.html)
 > - **VIDÉO YOUTUBE (Pitch & Gameplay) :** [URL_DE_LA_VIDEO]
 > - **RAPPORT DE CONCEPTION (PDF - 6 pages max) :** [Lien du pdf](https://github.com/LuisJuniorA/website-buffa/blob/main/Rapport%20de%20conception%20Applicaion%20Web.pdf)
 > - **LIEN DES 3 JEUX :**
