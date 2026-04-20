@@ -7,7 +7,7 @@
 > **Liens indispensables**
 >
 > - **LIEN DU SITE HÉBERGÉ (Les 3 jeux) :** [Lien du site](https://luisjuniora.github.io/website-buffa/frontend/index.html)
-> - **VIDÉO YOUTUBE (Pitch & Gameplay) :** [URL_DE_LA_VIDEO]
+> - **VIDÉO YOUTUBE (Pitch & Gameplay) :** [URL_DE_LA_VIDEO](https://youtu.be/OsY_KS_zKq4)
 > - **RAPPORT DE CONCEPTION (PDF - 6 pages max) :** [Lien du pdf](https://github.com/LuisJuniorA/website-buffa/blob/main/Rapport%20de%20conception%20Applicaion%20Web.pdf)
 > - **LIEN DES 3 JEUX :**
 >     - RSGBE (DOM) : [Lien vers le GitHub de l'émulateur Rust](https://github.com/LuisJuniorA/rsgbe) + [Lien vers le Github du site démo](https://github.com/LuisJuniorA/gb-site)
