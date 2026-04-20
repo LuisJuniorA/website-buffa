@@ -1,5 +1,5 @@
 // API Client pour communiquer avec le backend
-export const API_BASE_URL = "http://localhost:3001/api";
+export const API_BASE_URL = "https://website-buffa-21wl.vercel.app/api";
 
 /**
  * Envoie une requête HTTP avec gestion d'erreur
